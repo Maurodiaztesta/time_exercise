@@ -1,23 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+
+import './App.scss';
+import Countdown from './components/Countdown/Countdown';
+import DigitalClock from './components/DigitalClock/DigitalClock';
+import Stopwatch from './components/Stopwatch/Stopwatch';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="divPadre">
+      <main className="divPadre__contenedor">
+        <DigitalClock></DigitalClock>
+        <Countdown></Countdown>
+        <Stopwatch></Stopwatch>
+      </main>
     </div>
   );
 }
